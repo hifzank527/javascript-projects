@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+
+}
+#logo{
+    color: rgb(38, 45, 50);
+}
+#logo em{
+    color: red;
+    font-size: 35px;
+}
+.container {
+    display: flex;
+    height: 80vh;
+    box-shadow: 0 0 10px silver;
+    border-radius: 10px;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-shadow: 0 0 10px black;
+    border: 1px solid black ;
+}
+#score {
+    font-size: 18px;
+    margin: 10px 0;
+    background-color: lightgreen;
+    padding: 5px;
+    border-radius: 8px;
+
+}
+#userScore, #computerScore {
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 2px 6px;
+    border-radius: 5px;
+}
+
+.container img {
+    height: 150px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 5px 0;
+
+}
+.container #Scissor{
+   padding: 4px;
+}
+.container img:hover {
+    animation: glow 1s infinite ease;
+}
+
+#Scissor {
+    height: 140px;
+}
+
+#gameInput {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 400px;
+}
+#gameInput::placeholder {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-style: italic;;
+}
+
+#result {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    box-shadow: 0 0 10px silver;
+    border-radius: 5px;
+    width: 400px;
+}
+
+#result2 {
+    animation: result 3s infinite ease;
+    border-radius: 5px;
+    width: 400px;
+    text-align: center;
+    font-style: italic;
+}
+
+#darkmode {
+    padding: 2px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#darkmode:hover {
+    background-color: whitesmoke;
+}
+
+.darkmode {
+    .container {
+        background-color: rgb(35, 35, 35);
+        color: white;
+
+    }
+    #winnerCard{
+        background-color: black;
+        color: white;
+    }
+    #logo{
+        color: white;
+    }
+}
+
+@keyframes result {
+    0% {
+        box-shadow: 0 0 10px yellow;
+    }
+
+    25% {
+        box-shadow: 0 0 10px red;
+    }
+
+    50% {
+        box-shadow: 0 0 10px goldenrod;
+    }
+
+    75% {
+        box-shadow: 0 0 10px lightgreen;
+    }
+
+    100% {
+        box-shadow: 0 0 10px red;
+    }
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 2px white;
+    }
+
+    15% {
+        box-shadow: 0 0 15px purple;
+    }
+
+    25% {
+        box-shadow: 0 0 6px red;
+    }
+
+    50% {
+        box-shadow: 0 0 10px orange;
+    }
+
+    65% {
+        box-shadow: 0 0 15px blue;
+    }
+
+    75% {
+        box-shadow: 0 0 10px blueviolet;
+    }
+
+    85% {
+        box-shadow: 0 0 6px brown;
+    }
+
+    100% {
+        box-shadow: 0 0 2px black;
+    }
+
+}
+#reset{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    margin-top: 10px;
+}
+#reset:hover{
+    background-color: rgb(216, 0, 0);
+}
+
+#winnerCard{
+    height: 60vh;
+    top: 16%;
+    border-radius: 10px;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 80vh;
+    box-shadow: 0 0 10px grey;
+    border: 1px solid grey;
+    padding: 20px;
+}
+#winnerText{
+    font-size: 30px;
+    margin: 30px 0;
+    animation: result 5s infinite ease;
+    border-radius: 15px;
+    padding: 4px;
+}
+
+@media (max-width:602px){
+    #winnerCard{
+        width: 60vw;
+    }
+    .container{
+        height: 70vh;
+    }
+    .container img{
+        height: 100px;
+    }
+    #Scissor{
+        height: 100px;
+    }
+  #result{
+    width: 300px; margin-left: 0;
+    margin-right: 0;
+  }
+  #result2{
+    width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width:509px){
+    #gameInput{
+        width: 300px;
+        margin-right: 0;margin-left: 0;
+    }
+
+}
+@media (max-width:470px){
+    #score{
+        margin: 2px 0;
+        font-size: 15px;
+    }
+}
+@media (max-width:407px){
+    .container img{
+        height: 80px;
+    }
+    #Scissor{
+        height: 80px;
+    }
+    .container{
+        padding: 10px;
+    }
+}
+@media (max-width:370px){
+    .container{
+        padding: 2px;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper And Scissor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+      <div><h1 id="logo">Code<em>X</em>Hifzan</h1></div>
+    <div class="container">
+        <div id="darkmode">🌙</div>
+        <div><img onclick="appendValue('Paper')" id="Paper" src="images/paper.png" alt="paper">
+        <img onclick="appendValue('Rock')" id="Rock" src="images/rock.png" alt="Rock">
+        <img onclick="appendValue('Scissor')" id="Scissor" src="images/Scissors.jpg" alt="Scissor"></div>
+        <div><input type="text" id="gameInput" placeholder="CHOSE IN ABOVE IMAGES AND GET YOUR RESULT!!!" disabled></div>
+
+        <div id="score">YOUR POINTS: <span id="userScore">0</span>COMPUTER POINTS: <span id="computerScore">0</span>
+        </div>
+
+      <div id="result">
+      </div>
+      <div id="result2"></div>
+
+<div id="winnerCard">
+    <h2 id="winnerText"></h2>
+      <button id="reset">Reset Game</button>
+</div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
