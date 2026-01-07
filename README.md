@@ -37,6 +37,6 @@ https://hifzank527.github.io/javascript-projects/folder-name/
 ## ▶️ How to Run the Project
 
 1. Download or clone this repository
-   ```bash
+```bash
    git clone https://github.com/hifzank527/javascript-projects.git
-   
+```   
