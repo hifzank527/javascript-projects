@@ -33,7 +33,7 @@ project-folder/
 **Paste folder name instead of folder-name**
 ```bash
 https://hifzank527.github.io/javascript-projects/folder-name/
-
+```
 ## ▶️ How to Run the Project
 
 1. Download or clone this repository
