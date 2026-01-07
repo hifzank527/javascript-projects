@@ -30,10 +30,21 @@ project-folder/
 
 
 ## ▶️ To view website go to this link
-**Paste folder name instead of folder-name**
+**Paste the following Url**
+1.Ecommerce
 ```bash
-https://hifzank527.github.io/javascript-projects/folder-name/
+https://hifzank527.github.io/javascript-projects/Ecommerce/
 ```
+2.Weather App
+```bash
+https://hifzank527.github.io/javascript-projects/weather%20app/
+```
+3.Rock Paper Scissor
+```bash
+https://hifzank527.github.io/javascript-projects/game/
+```
+
+
 ## ▶️ How to Run the Project
 
 1. Download or clone this repository
