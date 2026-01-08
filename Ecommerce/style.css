@@ -84,34 +84,64 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 95vw;
+    text-align: center;
 }
 
 #product-grid {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
 }
 
+#banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
 
+#banner-img{
+    width: 40vw;
+    border-radius: 10px;
+}
+@media (max-width:650px){
+  #banner-img{
+    width: 60vw;
+  }
+}
+@media (max-width:450px){
+  #banner-img{
+    width: 95vw;
+  }
+}
+
+#cart i:hover{
+    cursor: pointer;
+   color: #a3ff00;
+}
+.addToCart:hover{
+color: #a3ff00;
+}
 .card {
     margin: 40px 10px;
     display: flex;
-    height: 300px;
+    height: 330px;
     align-items: center;
-
     flex-wrap: wrap;
     background-color: #fff;
-    justify-content: center;
     flex-direction: column;
     border-radius: 5px;
     width: 200px;
     border: 1px solid #464646;
 }
-
+.card:hover{
+    box-shadow: 0 0 5px #464646;
+}
 .card img {
     width: 200px;
+    height: 200px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border-bottom: 1px solid #46464631;
@@ -125,25 +155,33 @@ nav ul li a:hover {
 .card p {
     font-weight: bold;
     color: red;
-    margin: 4px 0;
+    margin-top: auto;
 }
 
 .card button{
+    display: flex;
     padding: 5px;
+    margin-top: auto;
+    margin-bottom: 5px;
     width: 190px;
-    background-color: orange;
+    background-color: #11219b;
     color: #fff;
     font-weight: bold;
     font-size: 17px;
-    margin: 2px;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
     cursor: pointer;
-    border: 1px solid orange;
+    border: 1px solid #11219b;
 }
 .card button a{
     text-decoration: none;
     color: #fff;
 }
+.card button a:hover{
+    color: #a3ff00;
+}
+
 
 .herosection{
     display: flex;
@@ -349,6 +387,26 @@ footer a{
 #close{
     display: none;
 }
+
+#close2{
+        display: flex;
+        width: 10%;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        cursor: pointer;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 15px;
+        background-color: #14215b
+    }
+    
+    #close2:hover{
+        color: #a3ff00;
+        background-color: #4646467a;
+    }
+
 #hamburger{
     background-color: transparent;
     color: #fff;
@@ -370,7 +428,7 @@ cursor: pointer;
         top: 12px;
         padding: 20px;
         right: 0;
-        z-index: 999;
+        z-index: 998;
         height: 100vh;
         width: 200px;
         align-items: start;
@@ -390,6 +448,7 @@ cursor: pointer;
         padding: 15px;
         background-color: #14215b
     }
+
     #close:hover{
         color: #a3ff00;
         background-color: #4646467a;
@@ -410,4 +469,43 @@ cursor: pointer;
       position: absolute;
       top: 55px;
     }
+}
+
+#cartBox{
+    display: none;
+    right: 10px;
+    color: #fff;
+    flex-direction: column;
+    background-color: #14215b;
+    position: fixed;
+    height: 80vh;
+    padding: 2px;
+    width: 60vw;
+    z-index: 999;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+
+#cartBox h2{
+    text-align: center;
+    margin: 2px;
+    padding: 5px;
+    font-style: italic;
+}
+/* #cartBox Ul li{
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #fff;
+} */
+.cart-products{
+    list-style-type: none;
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+    margin: 5px 5px;
+    border: 2px solid #fff;
 }
