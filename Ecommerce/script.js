@@ -94,6 +94,9 @@ search.addEventListener("keyup", renderProduct)
 
 searchBtn.addEventListener("click", renderProduct);
 
+
+//adding cart
+
 const cart = document.getElementById("cart");
 const cartBox = document.getElementById("cartBox");
 const cartLists = document.getElementById("cartItems");
@@ -108,31 +111,6 @@ cartClose.addEventListener("click", ()=>{
     cartBox.style.display = ""
 })
 
-
-function addToCart(index) {
-    cartList.push(products[index]);
-    displayCart();
-}
-
-function displayCart() {
-    cartList.innerHTML = ""
-    let total = 0;
-
-    cartList.forEach(item => {
-        total += item.price
-        const li = document.createElement("li");
-        li.className = 'cart-products'
-        li.textContent = `${item.title} - $${item.price}`
-         cartBox.appendChild(li)
-        const existingItem = cartLists.find(item => item.title === item.title)
-        if (existingItem) {
-            existingItem.quantity += 1
-        } else {
-            cartLists.push({ item , quantity: 1 })
-        }
-       
-    })
-    cartTotal.textContent = total
-}
+// cart finished
 
 
