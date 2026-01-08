@@ -94,56 +94,6 @@ search.addEventListener("keyup", renderProduct)
 
 searchBtn.addEventListener("click", renderProduct);
 
-//cart items
-
-// const cart = document.getElementById("cart");
-// const cartBox = document.getElementById("cartBox");
-// const cartLists = document.getElementById("cartItems");
-// const cartTotal = document.getElementById("cartTotal");
-
-// function addToCart(index){
-//     cartList.push(products[index]);
-//     displayCart();
-// }
-
-// function displayCart (){
-//   cartList.innerHTML = ""
-//   let total = 0;
-
-//     cartList.forEach(item => {
-//     total += item.price;
-//     const li = document.createElement("li");
-//     li.textContent = `${item.title} - $${item.price}`;
-//     cartBox.appendChild(li);
-//     const existingItem = cart.find(item => item.title === item.title);
-//     if(existingItem){
-//         existingItem.quantity += 1;
-//     } else {
-//         cart.push({item , quantity: 1});
-//     }
-//     localStorage.setItem("cart", existingItem);
-//   });
-//     cartTotal.textContent = total;
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const cart = document.getElementById("cart");
 const cartBox = document.getElementById("cartBox");
 const cartLists = document.getElementById("cartItems");
@@ -152,6 +102,7 @@ const cartClose =document.getElementById("close2");
 
 cart.addEventListener("click", ()=>{
     cartBox.style.display= "flex"
+    menu.style.display=""
 })
 cartClose.addEventListener("click", ()=>{
     cartBox.style.display = ""
@@ -173,11 +124,11 @@ function displayCart() {
         li.className = 'cart-products'
         li.textContent = `${item.title} - $${item.price}`
          cartBox.appendChild(li)
-        const existingItem = cart.find(item => item.title === item.title)
+        const existingItem = cartLists.find(item => item.title === item.title)
         if (existingItem) {
             existingItem.quantity += 1
         } else {
-            cart.push({ item , quantity: 1 })
+            cartLists.push({ item , quantity: 1 })
         }
        
     })
