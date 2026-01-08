@@ -25,4 +25,4 @@ A simple **e-commerce website** built using **HTML, CSS, and JavaScript**. This 
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/simple-ecommerce.git
+   git clone https://github.com/hifzank527/javascript-projects/Ecommerc.git
