@@ -46,9 +46,15 @@ close
     <!-- cart container -->
     <div id="cartBox"><button id="close2"><span class="material-symbols-outlined">
 close
-</span></button> <h2>Cart 🛒</h2>
+</span></button> <h2>Cart 🛒<button onclick="clearCart()" id="clear"><i class="fa-solid fa-trash"></i></button></h2>
     <ul id="cartItems"></ul>
     <p>Total: $<span id="cartTotal">0</span></p>
+    <button id="checkoutBtn">Check Out (<span id="checkout">0</span>)</button>
+     </div>
+     <!-- checkout box -->
+     <div id="checkoutBox">
+        <h2>Order Have Been Placed!!</h2>
+        <button id="Ok">OK</button>
      </div>
     <!-- Navbar ended -->
      <div id="banner"><img id="banner-img" src="images/banner.png" alt="banner"></div>

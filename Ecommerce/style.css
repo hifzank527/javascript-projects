@@ -80,7 +80,7 @@ nav ul li a:hover {
 
 /* Navbar finished */
 
-#products{
+#products {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -95,35 +95,39 @@ nav ul li a:hover {
     text-align: center;
 }
 
-#banner{
+#banner {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 32px;
 }
 
-#banner-img{
+#banner-img {
     width: 40vw;
     border-radius: 10px;
 }
-@media (max-width:650px){
-  #banner-img{
-    width: 60vw;
-  }
-}
-@media (max-width:450px){
-  #banner-img{
-    width: 95vw;
-  }
+
+@media (max-width:650px) {
+    #banner-img {
+        width: 60vw;
+    }
 }
 
-#cart i:hover{
+@media (max-width:450px) {
+    #banner-img {
+        width: 95vw;
+    }
+}
+
+#cart i:hover {
     cursor: pointer;
-   color: #a3ff00;
+    color: #a3ff00;
 }
-.addToCart:hover{
-color: #a3ff00;
+
+.addToCart:hover {
+    color: #a3ff00;
 }
+
 .card {
     margin: 40px 10px;
     display: flex;
@@ -136,9 +140,11 @@ color: #a3ff00;
     width: 300px;
     border: 1px solid #464646;
 }
-.card:hover{
+
+.card:hover {
     box-shadow: 0 0 5px #464646;
 }
+
 .card img {
     width: 300px;
     height: 200px;
@@ -158,7 +164,7 @@ color: #a3ff00;
     margin-top: auto;
 }
 
-.card button{
+.card button {
     display: flex;
     padding: 5px;
     margin-top: auto;
@@ -174,29 +180,32 @@ color: #a3ff00;
     cursor: pointer;
     border: 1px solid #11219b;
 }
-.card button a{
+
+.card button a {
     text-decoration: none;
     color: #fff;
 }
-.card button a:hover{
+
+.card button a:hover {
     color: #a3ff00;
 }
 
 
-.herosection{
+.herosection {
     display: flex;
     align-items: center;
 }
 
-#noProduct{
+#noProduct {
     color: red;
     font-size: 20px;
-    font-style: italic;    
+    font-style: italic;
     font-weight: bold;
     height: 100vh;
     text-align: center;
 }
-footer{
+
+footer {
     background-color: #14215b;
     height: 25vh;
     color: #fff;
@@ -205,11 +214,11 @@ footer{
 }
 
 
-footer .logo{
+footer .logo {
     color: #fff;
 }
 
-#icons{
+#icons {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -224,30 +233,33 @@ footer i {
     border: none;
 }
 
-footer a{
+footer a {
     color: #fff;
 }
 
-#fa-github:hover,#fa-facebook:hover{
+#fa-github:hover,
+#fa-facebook:hover {
     box-shadow: 0 0 15px #a3ff00;
     color: #a3ff00;
     border-radius: 50%;
 }
-#fa-youtube:hover{
+
+#fa-youtube:hover {
     border-radius: 5px;
     background-color: transparent;
     padding: 0;
     box-shadow: 0 0 2px #a3ff00;
     color: #a3ff00;
 }
-#copy{
+
+#copy {
     font-size: 15px;
     font-weight: bold;
     color: #ffffffa1;
     margin: 10px;
 }
 
-.about #container{
+.about #container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -256,7 +268,7 @@ footer a{
 
 }
 
-.about #introduction{
+.about #introduction {
     display: flex;
     width: 60vw;
     margin: 20px;
@@ -270,12 +282,13 @@ footer a{
     color: #464646;
     font-size: 18px;
 }
-#introduction h1{
+
+#introduction h1 {
     color: #14215b;
 }
 
-.about #features{
-        display: flex;
+.about #features {
+    display: flex;
     width: 60vw;
     font-size: 18px;
     color: #464646;
@@ -288,18 +301,19 @@ footer a{
     box-shadow: 0 0 5px #464646;
 }
 
-#features h2{
+#features h2 {
     color: #14215b;
 }
 
-.login .container{
- height: 100vh;
+.login .container {
+    height: 100vh;
     display: flex;
     transition: all 0.3s;
     align-items: center;
     justify-content: center;
 }
-.login .container form{
+
+.login .container form {
     display: flex;
     height: 400px;
     justify-content: center;
@@ -312,7 +326,8 @@ footer a{
     border: 1px solid #464646;
     padding: 10px;
 }
-.login #javascript{
+
+.login #javascript {
     width: 30vw;
     margin-top: 6px;
     height: 421px;
@@ -320,7 +335,8 @@ footer a{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-.login .container form input{
+
+.login .container form input {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #464646;
@@ -329,32 +345,35 @@ footer a{
     font-size: 16px;
     margin: 10px;
 }
-.login .container form input:focus{
-   border: 2px solid #14215b;
+
+.login .container form input:focus {
+    border: 2px solid #14215b;
 }
 
-.login .container form #submit{
+.login .container form #submit {
     background-color: #14215b;
     color: white;
     border: 1px solid #14215b;
     cursor: pointer;
 }
-.login .container form #submit:hover{
-   color: #a3ff00;
+
+.login .container form #submit:hover {
+    color: #a3ff00;
 }
 
-@media (max-width:550px){
+@media (max-width:550px) {
     .login .container form {
-     width: 90vw;
-     border-radius: 10px;
+        width: 90vw;
+        border-radius: 10px;
     }
-    .login #javascript{
+
+    .login #javascript {
         display: none;
     }
 }
 
 
-.contact .container{
+.contact .container {
     height: 100vh;
     display: flex;
     transition: all 0.3s;
@@ -364,7 +383,7 @@ footer a{
 
 
 
-.contact .container form{
+.contact .container form {
     display: flex;
     height: 60vh;
     justify-content: center;
@@ -376,7 +395,8 @@ footer a{
     border: 1px solid #464646;
     padding: 20px;
 }
-.contact .container form input{
+
+.contact .container form input {
     padding: 10px;
     border-radius: 10px;
     border: 1px solid #464646;
@@ -385,63 +405,67 @@ footer a{
     font-size: 16px;
     margin: 10px;
 }
-.contact .container form input:focus{
-   border: 2px solid #14215b;
+
+.contact .container form input:focus {
+    border: 2px solid #14215b;
 }
 
-.contact .container form #submit{
+.contact .container form #submit {
     background-color: #14215b;
     color: white;
     border: 1px solid #14215b;
     cursor: pointer;
 }
-.contact .container form #submit:hover{
-   color: #a3ff00;
+
+.contact .container form #submit:hover {
+    color: #a3ff00;
 }
 
-@media (max-width:550px){
+@media (max-width:550px) {
     .contact .container form {
-     width: 90vw;
+        width: 90vw;
     }
 }
 
-#close{
+#close {
     display: none;
 }
 
-#close2{
-        display: flex;
-        width: fit-content;
-        margin: 10px;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        cursor: pointer;
-        color: #fff;
-        border: 1px solid #fff;
-        padding: 15px;
-        background-color: #14215b
-    }
-    
-    #close2:hover{
-        color: #a3ff00;
-        background-color: #4646467a;
-    }
+#close2 {
+    display: flex;
+    width: fit-content;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px;
+    background-color: #14215b
+}
 
-#hamburger{
+#close2:hover {
+    color: #a3ff00;
+    background-color: #4646467a;
+}
+
+#hamburger {
     background-color: transparent;
     color: #fff;
-display: none;
-align-items: center;
-justify-content: center;
-cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
     border: 1px solid #14215b;
 }
-#hamburger:hover{
+
+#hamburger:hover {
     color: #a3ff00;
 }
-@media (max-width:679px){
-    #menu{
+
+@media (max-width:679px) {
+    #menu {
         display: none;
         flex-direction: column;
         background-color: #14215b;
@@ -454,10 +478,12 @@ cursor: pointer;
         width: 200px;
         align-items: start;
     }
-    #hamburger{
+
+    #hamburger {
         display: flex;
     }
-    #close{
+
+    #close {
         display: flex;
         width: 95%;
         align-items: center;
@@ -470,29 +496,31 @@ cursor: pointer;
         background-color: #14215b
     }
 
-    #close:hover{
+    #close:hover {
         color: #a3ff00;
         background-color: #4646467a;
     }
+
     #menu li {
         margin: 3px 0;
         width: 95%;
         padding: 15px;
     }
-    #menu li:hover{
+
+    #menu li:hover {
         background-color: #4646467a;
         cursor: pointer;
     }
 }
 
-@media (max-width:409px){
-    .search{
-      position: absolute;
-      top: 55px;
+@media (max-width:409px) {
+    .search {
+        position: absolute;
+        top: 55px;
     }
 }
 
-#cartBox{
+#cartBox {
     display: none;
     right: 10px;
     color: #fff;
@@ -507,14 +535,23 @@ cursor: pointer;
 }
 
 
-#cartBox h2{
+#cartBox h2 {
     text-align: center;
     margin: 2px;
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
     padding: 5px;
     font-style: italic;
 }
 
-.cart-products{
+.cart-products {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     list-style-type: none;
     list-style-type: none;
     text-align: center;
@@ -523,16 +560,17 @@ cursor: pointer;
     border: 2px solid #fff;
 }
 
-#cartItems{
+#cartItems {
     max-height: 50vh;
     overflow-y: auto;
 }
 
-@media (max-width:405px){
-    #cartBox{
+@media (max-width:405px) {
+    #cartBox {
         width: 90%;
     }
-    #menu{
+
+    #menu {
         width: 90%;
     }
 }
@@ -545,4 +583,64 @@ cursor: pointer;
     border: 2px solid #464646;
     padding: 10px;
     margin: 10px;
+}
+
+#clear {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    margin: 4px 0;
+    margin-left: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #ff0000;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: #ff0000
+}
+
+#checkoutBtn{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #464646;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ff0000;
+}
+#checkoutBtn:hover{
+ background-color: #ba1b1b;
+}
+#checkoutBox{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+     left: 20vw;
+    flex-direction: column;
+    background-color: #14215b;
+    position: fixed;
+    height: 80vh;
+    padding: 2px;
+    width: 60vw;
+    z-index: 999;
+    border-radius: 10px;
+}
+#Ok{
+   text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #464646;
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+    background-color: #ff0000;
+}
+#Ok:hover{
+    background-color: #ba1b1b;
 }
