@@ -123,7 +123,7 @@ function displayCart() {
     cartList.forEach(item => {
         li = document.createElement("li");
         li.className = "cart-products";
-        li.innerHTML = `${item.title} - ${item.price}`
+        li.innerHTML = `${item.title} - $${item.price}`
 cartLists.appendChild(li)
     })
 }
