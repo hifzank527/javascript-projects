@@ -49,5 +49,5 @@ https://hifzank527.github.io/javascript-projects/game/
 
 1. Download or clone this repository
 ```bash
-   git clone https://github.com/hifzank527/js.git
+   git clone https://github.com/hifzank527/javascript-projects.git
 ```   
