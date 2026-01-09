@@ -33,15 +33,15 @@ project-folder/
 **Paste the following Url**
 1.Ecommerce
 ```bash
-https://hifzank527.github.io/js/Ecommerce/
+https://hifzank527.github.io/javascript-projects/Ecommerce/
 ```
 2.Weather App
 ```bash
-https://hifzank527.github.io/js/weather%20app/
+https://hifzank527.github.io/javascript-projects/weather%20app/
 ```
 3.Rock Paper Scissor
 ```bash
-https://hifzank527.github.io/js/game/
+https://hifzank527.github.io/javascript-projects/game/
 ```
 
 
