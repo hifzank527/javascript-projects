@@ -343,6 +343,17 @@ footer a{
    color: #a3ff00;
 }
 
+@media (max-width:550px){
+    .login .container form {
+     width: 90vw;
+     border-radius: 10px;
+    }
+    .login #javascript{
+        display: none;
+    }
+}
+
+
 .contact .container{
     height: 100vh;
     display: flex;
@@ -350,6 +361,9 @@ footer a{
     align-items: center;
     justify-content: center;
 }
+
+
+
 .contact .container form{
     display: flex;
     height: 60vh;
@@ -384,6 +398,13 @@ footer a{
 .contact .container form #submit:hover{
    color: #a3ff00;
 }
+
+@media (max-width:550px){
+    .contact .container form {
+     width: 90vw;
+    }
+}
+
 #close{
     display: none;
 }

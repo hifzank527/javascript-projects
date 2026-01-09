@@ -101,16 +101,31 @@ const cart = document.getElementById("cart");
 const cartBox = document.getElementById("cartBox");
 const cartLists = document.getElementById("cartItems");
 const cartTotal = document.getElementById("cartTotal");
-const cartClose =document.getElementById("close2");
+const cartClose = document.getElementById("close2");
 
-cart.addEventListener("click", ()=>{
-    cartBox.style.display= "flex"
-    menu.style.display=""
+cart.addEventListener("click", () => {
+    cartBox.style.display = "flex"
+    menu.style.display = ""
 })
-cartClose.addEventListener("click", ()=>{
+cartClose.addEventListener("click", () => {
     cartBox.style.display = ""
 })
 
 // cart finished
+
+function addToCart(index) {
+    cartList.push(products[index]);
+    displayCart()
+}
+
+function displayCart() {
+           cartLists.innerHTML = ""
+    cartList.forEach(item => {
+        li = document.createElement("li");
+        li.className = "cart-products";
+        li.innerHTML = `${item.title} - ${item.price}`
+cartLists.appendChild(li)
+    })
+}
 
 
