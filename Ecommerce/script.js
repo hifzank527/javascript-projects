@@ -103,6 +103,7 @@ const cartLists = document.getElementById("cartItems");
 const cartTotal = document.getElementById("cartTotal");
 const cartClose = document.getElementById("close2");
 
+
 cart.addEventListener("click", () => {
     cartBox.style.display = "flex"
     menu.style.display = ""
@@ -120,12 +121,15 @@ function addToCart(index) {
 
 function displayCart() {
            cartLists.innerHTML = ""
+           let total = 0
     cartList.forEach(item => {
         li = document.createElement("li");
         li.className = "cart-products";
         li.innerHTML = `${item.title} - $${item.price}`
+        total += parseInt(item.price)
 cartLists.appendChild(li)
     })
+    cartTotal.textContent = total
 }
 
 

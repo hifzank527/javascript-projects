@@ -503,8 +503,6 @@ cursor: pointer;
     padding: 2px;
     width: 60vw;
     z-index: 999;
-    max-height: 80vh;
-    overflow-y: auto;
     border-radius: 10px;
 }
 
@@ -525,6 +523,11 @@ cursor: pointer;
     border: 2px solid #fff;
 }
 
+#cartItems{
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
 @media (max-width:405px){
     #cartBox{
         width: 90%;
@@ -532,4 +535,14 @@ cursor: pointer;
     #menu{
         width: 90%;
     }
+}
+
+#cartBox p {
+    text-align: center;
+    color: #ff0000;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #464646;
+    padding: 10px;
+    margin: 10px;
 }
