@@ -102,9 +102,7 @@ const cartBox = document.getElementById("cartBox");
 const cartLists = document.getElementById("cartItems");
 const cartTotal = document.getElementById("cartTotal");
 const cartClose = document.getElementById("close2");
-const checkoutBtn = document.getElementById("checkoutBtn");
-const checkoutBox = document.getElementById("checkoutBox");
-const Ok = document.getElementById("Ok")
+const checkout = document.getElementById("checkout")
 
 window.addEventListener("load", () => {
     const saveCart = localStorage.getItem("cart");
@@ -138,6 +136,7 @@ function addToCart(index) {
 
 function displayCart() {
     cartLists.innerHTML = ""
+    checkoutTotal = 0;
     let total = 0;
     cartList.forEach(item => {
         li = document.createElement("li");
@@ -145,8 +144,10 @@ function displayCart() {
         li.innerHTML = `${item.title} - $${item.price}`
         total += parseInt(item.price)
         cartLists.appendChild(li)
+        checkoutTotal++;
     })
     cartTotal.textContent = total
+    checkout.textContent = + parseInt(checkoutTotal)
 }
 
 function saveCart() {
@@ -154,7 +155,19 @@ function saveCart() {
 }
 
 function clearCart() {
-    localStorage.clear();
     cartLists.innerHTML = ""
-    cartTotal.textContent = 0
+    localStorage.clear();
+    location.reload()
 }
+
+// checkout
+
+const checkoutBtn = document.getElementById("checkoutBtn");
+checkoutBtn.addEventListener("click", () => {
+    if (!cartLists.innerHTML == "") {
+        localStorage.clear()
+        alert("Order Have Been Placed \n from https://hifzank527.github.io/javascript-projects/Ecommerce/ ");
+        location.reload()
+    }
+
+})
