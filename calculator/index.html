@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+/>
+</head>
+<body>
+    <div class="container">
+        <input type="text" disabled placeholder="0" id="calInput">
+    
+        <div>
+            <button id="clear">C</button>
+            <button onclick="appendValue('.')">.</button>
+            <button onclick="appendValue('%')"><i class="fa-solid fa-percent"></i></button>
+            <button id="delete"><i class="fa-solid fa-delete-left"></i></button>
+        </div>
+        <div>
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="appendValue('/')"><i class="fa-solid fa-divide"></i></button>
+        </div>
+        <div>
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="appendValue('*')"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div>
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+            <button onclick="appendValue('-')"><i class="fa-solid fa-minus"></i></button>
+        </div>
+        <div>
+            <button id="zero" onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('+')"><i class="fa-solid fa-plus"></i></button>
+            <button id="equal"><i class="fa-solid fa-equals"></i></button>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
