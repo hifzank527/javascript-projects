@@ -18,9 +18,9 @@ function appendValue(value) {
         userScore.textContent = parseInt(userScore.textContent) + 1;
         result.textContent = "YOU WIN!! 🎉🎉"
         result2.textContent = `You Choose : ${userChoice} and Computer Choose : ${computerChoice}`
-        if (userScore.textContent == "10"){
-        winnerCard.style.display = "flex";
-        winner.textContent = "You are the winner!! 🏆🏆"
+        if (userScore.textContent == "10") {
+            winnerCard.style.display = "flex";
+            winner.textContent = "You are the winner!! 🏆🏆"
         }
     }
     else if (userChoice === computerChoice) {
@@ -31,13 +31,13 @@ function appendValue(value) {
         result.textContent = "YOU LOSE!! 💔💔💔"
         result2.textContent = `You Choose : ${userChoice} and Computer Choose : ${computerChoice}`
         computerScore.textContent = parseInt(computerScore.textContent) + 1;
-        if (computerScore.textContent == "10"){
-        winnerCard.style.display = "flex";
-        winner.textContent = "You lose the game!! 🤖🏆"
+        if (computerScore.textContent == "10") {
+            winnerCard.style.display = "flex";
+            winner.textContent = "You lose the game!! 🤖🏆"
         }
     }
     userChoice = ""
-} 
+}
 
 //append value function ends here
 
@@ -48,7 +48,7 @@ const result = document.getElementById("result");
 const result2 = document.getElementById("result2");
 const userScore = document.getElementById("userScore");
 const computerScore = document.getElementById("computerScore");
-reset.addEventListener("click", ()=>{
+reset.addEventListener("click", () => {
     userScore.textContent = "0";
     computerScore.textContent = "0";
     result.textContent = "";
@@ -59,17 +59,32 @@ reset.addEventListener("click", ()=>{
 
 //dark mode function starts here
 
+
 const darkmode = document.getElementById("darkmode");
-const body = document.body
-darkmode.addEventListener("click", ()=>{
+const body = document.body;
+
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("darkmode")
+    darkmode.textContent = "🌙"
+    body.style.background = "rgb(35, 35, 35)"
+    localStorage.setItem("theme", "dark")
+} else {
+    darkmode.textContent = "☀️"
+    body.style.backgroundColor = "white"
+}
+
+
+darkmode.addEventListener("click", () => {
     body.classList.toggle("darkmode");
-    if(body.classList.contains("darkmode")){
+    if (body.classList.contains("darkmode")) {
         darkmode.textContent = "🌙"
         body.style.background = "rgb(35, 35, 35)"
+        localStorage.setItem("theme", "dark")
     }
-    else{
+    else {
         darkmode.textContent = "☀️"
         body.style.backgroundColor = "white"
+        localStorage.setItem("theme", "light")
     }
 })
 
