@@ -141,7 +141,7 @@ function displayCart() {
     cartList.forEach(item => {
         li = document.createElement("li");
         li.className = "cart-products";
-        li.innerHTML = `${item.title} - $${item.price}`
+        li.innerHTML = `<img src="${item.Img}" alt="product-img">  - ${item.title} - $${item.price}`
         total += parseInt(item.price)
         cartLists.appendChild(li)
         checkoutTotal++;

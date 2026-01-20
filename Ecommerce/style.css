@@ -577,6 +577,13 @@ footer a {
     border: 2px solid #fff;
 }
 
+.cart-products img{
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 2px;
+    box-shadow: 0 0 5px;
+}
+
 #cartItems {
     max-height: 50vh;
     overflow-y: auto;
