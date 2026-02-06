@@ -26,7 +26,7 @@ function getWeather() {
             wind.textContent = ""
             ;
         }else{
-        cityName2.textContent = "City: " + data.name;
+        cityName2.textContent = "City❤️: " + data.name;
         temperature.textContent = "Temp🌡️: " + Math.round(data.main.temp) + "°C";
         humidity.textContent = "Humidity💧: " + data.main.humidity + "%";
         wind.textContent = "Wind🍃: " + data.wind.speed +"km/h";
