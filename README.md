@@ -32,19 +32,19 @@ project-folder/
 ## ▶️ To view website go to this link
 **Paste the following Url**
 
--1.Ecommerce
+**1.Ecommerce**
 ```bash
 https://hifzank527.github.io/javascript-projects/Ecommerce/
 ```
--2.Weather App
+**2.Weather App**
 ```bash
 https://hifzank527.github.io/javascript-projects/weather%20app/
 ```
--3.Rock Paper Scissor
+**3.Rock Paper Scissor**
 ```bash
 https://hifzank527.github.io/javascript-projects/game/
 ```
--4.Calculator
+**4.Calculator**
 ```bash
 https://hifzank527.github.io/javascript-projects/calculator/
 ```
