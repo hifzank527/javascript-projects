@@ -48,7 +48,7 @@ https://hifzank527.github.io/javascript-projects/game/
 ```bash
 https://hifzank527.github.io/javascript-projects/calculator/
 ```
-**4.Stop Watch**
+**5.Stop Watch**
 ```bash
 https://hifzank527.github.io/javascript-projects/stop-watch/
 ```
