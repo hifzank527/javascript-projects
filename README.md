@@ -44,6 +44,10 @@ https://hifzank527.github.io/javascript-projects/weather%20app/
 ```bash
 https://hifzank527.github.io/javascript-projects/game/
 ```
+-4.Calculator
+```bash
+https://hifzank527.github.io/javascript-projects/calculator/
+```
 
 
 ## ▶️ How to Run the Project
