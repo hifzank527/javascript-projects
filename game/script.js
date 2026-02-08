@@ -56,36 +56,3 @@ reset.addEventListener("click", () => {
     winnerCard.style.display = "none";
 
 })
-
-//dark mode function starts here
-
-
-const darkmode = document.getElementById("darkmode");
-const body = document.body;
-
-if (localStorage.getItem("theme") === "dark") {
-    body.classList.add("darkmode")
-    darkmode.textContent = "🌙"
-    body.style.background = "rgb(35, 35, 35)"
-    localStorage.setItem("theme", "dark")
-} else {
-    darkmode.textContent = "☀️"
-    body.style.backgroundColor = "white"
-}
-
-
-darkmode.addEventListener("click", () => {
-    body.classList.toggle("darkmode");
-    if (body.classList.contains("darkmode")) {
-        darkmode.textContent = "🌙"
-        body.style.background = "rgb(35, 35, 35)"
-        localStorage.setItem("theme", "dark")
-    }
-    else {
-        darkmode.textContent = "☀️"
-        body.style.backgroundColor = "white"
-        localStorage.setItem("theme", "light")
-    }
-})
-
-//dark mode function ends here

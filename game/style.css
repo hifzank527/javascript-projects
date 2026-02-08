@@ -6,7 +6,9 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
+    color: white;
     flex-direction: column;
+    background: linear-gradient(#000000d6),center/cover,no-repeat,url('images/ChatGPT\ Image\ Feb\ 8\,\ 2026\,\ 11_42_39\ AM.png');
     height: 100vh;
     align-items: center;
     justify-content: center;
@@ -14,22 +16,22 @@ body {
 
 }
 #logo{
-    color: rgb(38, 45, 50);
+    color: #ffffff;
 }
 #logo em{
     color: red;
-    font-size: 35px;
+    font-size: 40px;
 }
 .container {
     display: flex;
     height: 80vh;
-    box-shadow: 0 0 10px silver;
     border-radius: 10px;
     padding: 20px;
     flex-direction: column;
+    backdrop-filter: blur(5px);
     text-align: center;
     align-items: center;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px grey;
     border: 1px solid black ;
 }
 #score {
@@ -96,32 +98,6 @@ body {
     font-style: italic;
 }
 
-#darkmode {
-    padding: 2px;
-    font-size: 20px;
-    border: 1px solid black;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#darkmode:hover {
-    background-color: whitesmoke;
-}
-
-.darkmode {
-    .container {
-        background-color: rgb(35, 35, 35);
-        color: white;
-
-    }
-    #winnerCard{
-        background-color: black;
-        color: white;
-    }
-    #logo{
-        color: white;
-    }
-}
 
 @keyframes result {
     0% {
@@ -202,7 +178,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    backdrop-filter: blur(30px);
     width: 80vh;
     box-shadow: 0 0 10px grey;
     border: 1px solid grey;
