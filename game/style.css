@@ -171,14 +171,14 @@ body {
 
 #winnerCard{
     height: 60vh;
-    top: 16%;
+    top: 15%;
     border-radius: 10px;
     position: fixed;
     display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(30px);
+    background-color: #808080f5;
     width: 80vh;
     box-shadow: 0 0 10px grey;
     border: 1px solid grey;
