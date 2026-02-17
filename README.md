@@ -52,7 +52,7 @@ https://hifzank527.github.io/javascript-projects/calculator/
 ```bash
 https://hifzank527.github.io/javascript-projects/stop-watch/
 ```
-**5.Todo List App**
+**6.Todo List App**
 ```bash
 https://hifzank527.github.io/javascript-projects/Todo-List-App/
 ```
