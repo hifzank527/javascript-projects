@@ -52,6 +52,10 @@ https://hifzank527.github.io/javascript-projects/calculator/
 ```bash
 https://hifzank527.github.io/javascript-projects/stop-watch/
 ```
+**6.Todo List App**
+```bash
+https://hifzank527.github.io/javascript-projects/Todo-List-App/
+```
 
 
 ## ▶️ How to Run the Project
