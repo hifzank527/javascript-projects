@@ -12,7 +12,10 @@ function saveTasks() {
 function addTodos() {
     todoText = todoInput.value.trim();
     if (!todoText) return;
-    todoArray.push(todoText);
+    todoArray.push({
+        title: todoText,
+        completed: false
+    });
     todoInput.value = ""
     saveTasks()
     renderTodos()
@@ -24,12 +27,19 @@ function renderTodos() {
         let li = document.createElement("li");
 
         let span = document.createElement("span")
-        span.textContent = element;
+        span.textContent = element.title;
 
         let checkBox = document.createElement("input");
         checkBox.type = "checkbox";
+        checkBox.checked = element.completed;
+if(element.completed) {
+    span.classList.add("done")
+}
+
         checkBox.addEventListener("change", () => {
-            span.classList.toggle("done")
+            element.completed = !element.completed;
+            saveTasks();
+            renderTodos();
         })
 
         let removeBtn = document.createElement("button");
