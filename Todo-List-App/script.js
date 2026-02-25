@@ -33,7 +33,7 @@ function renderTodos() {
         checkBox.type = "checkbox";
         checkBox.checked = element.completed;
 if(element.completed) {
-    span.classList.add("done")
+    span.classList.add("done");
 }
 
         checkBox.addEventListener("change", () => {

@@ -120,6 +120,7 @@ input[type="checkbox"] {
   height: 20px;
   accent-color: blue; /* changes check color */
   cursor: pointer;
+  margin-right: auto;
 }
 
 .removeBtn{
@@ -128,6 +129,7 @@ input[type="checkbox"] {
     border-radius: 5px;
     cursor: pointer;
     color: white;
+    margin-left: auto;
     font-weight: bolder;
     height: 25px;
     width: 25px;
@@ -135,6 +137,7 @@ input[type="checkbox"] {
 
 span{
     display: flex;
+    margin: 0 auto;
     max-width: 200px;
     flex-wrap: wrap;
 }
